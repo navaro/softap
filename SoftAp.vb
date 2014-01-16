@@ -92,7 +92,7 @@ Public Class SoftAp
             Dim pnt As IntPtr
             Dim result As UInt32
 
-            connectionSettings.hostedNetworkSSID = New DOT11_SSID("aervida")
+            connectionSettings.hostedNetworkSSID = New DOT11_SSID(value)
             connectionSettings.dwMaxNumberOfPeers = 101
 
             pnt = Marshal.AllocHGlobal(Marshal.SizeOf(connectionSettings))
